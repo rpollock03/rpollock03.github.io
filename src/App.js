@@ -1,11 +1,19 @@
 import React from "react"
-import MainNavigation from "./MainNavigation"
+import Nav from "./Nav"
+import "./App.css"
+import Jumbotron from "./Jumbotron"
+
 
 function App() {
   return (
-    <div>
-      <MainNavigation />
-      <h1>TEST MAIN APP</h1>
+    <div >
+      <Nav />
+      <Jumbotron />
+      <section>
+
+      </section>
+
+
     </div>
   )
 

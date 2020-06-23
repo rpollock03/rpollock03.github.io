@@ -1,0 +1,124 @@
+.jumbotron-cont{
+    height:100vh;
+      background-image: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),url("./images/forest-background.jpg");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    clip-path: polygon(0 0, 100% 0, 100% 94%, 0 100%);
+}
+
+.inner-cont{
+  border:white solid 3px;
+  display:flex;
+  width:100vw;
+  height:85vh;
+  margin:50px;
+  margin-top:65px;
+}
+
+.profile-cont{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.profile-pic{
+  width:90%;
+
+  height:auto;
+  border-radius:50%;
+  border: 3px solid white;
+  
+}
+
+.heading{
+  background:rgba(73, 10, 219, 0.3);
+  font-size:3rem;
+}
+
+.subHeading{
+
+  background-color:rgba(73, 10, 219, 0.3);
+  font-size:2rem;
+}
+
+.intro{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  justify-content:center;
+
+}
+
+i{
+  color:lightcoral;
+}
+
+.full-stack{
+  color:rgb(97,184,116);
+}
+
+.btn-cont{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+button{
+  background:rgba(73, 10, 219, 0.3);
+  border:solid 2px rgba(73, 10, 219, 0.3);
+  padding:5px;
+  border-radius:5px;
+  font-size:2rem;
+  outline:none;
+  color:white;
+  width:60px;
+  height:60px;
+}
+
+button:hover{
+  background: rgb(97,184,116);
+  color:white;
+  transform: scale(1.2);
+
+}
+
+
+@media screen and (max-width:768px){
+.profile-pic{
+width:60%;
+max-width:300px;
+
+}
+
+.heading{
+  font-size:2.2rem;
+}
+
+.subHeading{
+  font-size:1.5rem;
+}
+
+.intro{
+  justify-content:flex-start;
+}
+}
+
+
+@media screen and (min-width:900px){
+.profile-pic{
+  max-width:30vw;
+}
+
+}
+
+
+
+
