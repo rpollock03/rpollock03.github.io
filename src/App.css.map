@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,CAAC,CAAA;EACG,MAAM,EAAC,CAAC;EACR,OAAO,EAAC,CAAC;EACT,UAAU,EAAC,UAAU;CACxB;;AAED,AAAA,IAAI,CAAA;EACA,WAAW,EAAE,UAAU;CAE1B",
+    "mappings": "AAEA,AAAA,IAAI,CAAA;EACA,eAAe,EAAE,MAAM;CAC1B;;AAED,AAAA,CAAC,CAAA;EACG,MAAM,EAAC,CAAC;EACR,OAAO,EAAC,CAAC;EACT,UAAU,EAAC,UAAU;EACrB,WAAW,EAAE,uBAAuB;CACvC;;AAGD,AAAA,OAAO,CAAA;EACH,MAAM,EAAC,KAAK;CACf",
     "sources": [
-        "App.scss"
+        "App.scss",
+        "components/_Jumbotron.scss"
     ],
     "names": [],
     "file": "App.css"

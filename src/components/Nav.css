@@ -1,0 +1,23 @@
+#navbar-toggler {
+  outline: none;
+  border: none;
+}
+
+.navbarNav {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#navbar-main {
+  background-color: #424079 !important;
+}
+
+#navbar-main a {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+#navbar-main a:hover {
+  color: white !important;
+}
+/*# sourceMappingURL=Nav.css.map */

@@ -1,0 +1,19 @@
+.profile-photo {
+  max-width: 240px;
+  height: auto;
+  border: 3px white solid;
+}
+
+.masthead-cont {
+  background-color: #6f6db2;
+}
+
+span {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+#location {
+  color: white !important;
+  white-space: nowrap;
+}
+/*# sourceMappingURL=Masthead.css.map */
