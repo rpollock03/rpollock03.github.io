@@ -12,10 +12,13 @@ function Contact() {
                 <div className="section-intro mx-auto text-center mb-5 text-white">
                     Here's some cool things I've made recently:
                  <ul className="list-inline list-unstyled  py-3">
-                        <li className="list-inline-item text-white"><i class="fab fa-twitter"></i></li>
-                        <li className="list-inline-item text-white"><i class="fab fa-facebook-f"></i></li>
-                        <li className="list-inline-item text-white"><i class="fab fa-github"></i></li>
-                        <li className="list-inline-item text-white"><i class="fab fa-instagram"></i></li>
+                        <li className="social-icon list-inline-item text-white"><i class="fab fa-twitter"></i></li>
+                        <li className=" social-icon list-inline-item text-white"><i class="fab fa-facebook-f"></i></li>
+                        <li className="social-icon list-inline-item text-white"><i class="fab fa-github"></i></li>
+                        <li className="social-icon list-inline-item text-white"><i class="fab fa-instagram"></i></li>
+                        <li className="social-icon list-inline-item text-white">
+                            <i class="far fa-envelope"></i>
+                        </li>
                     </ul>
                     <span><a href="#">robertpollockbfs@gmail.com</a></span>
                     <a href='https://ko-fi.com/Z8Z11WXD3' target='_blank'><img height='36' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>

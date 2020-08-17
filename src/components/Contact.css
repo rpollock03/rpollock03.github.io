@@ -3,3 +3,14 @@
 #contact-intro{
     background-color: #6f6db2;
 }
+
+
+
+.social-icon>i{
+    font-size:2rem;
+    padding:20px;
+}
+
+.social-icon:hover{
+    background-color:white;
+}

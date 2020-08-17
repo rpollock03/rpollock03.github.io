@@ -1,5 +1,7 @@
 import React from "react"
 
+import calculator from "./projects/calculator.gif"
+
 import "./Featured.css"
 
 function Featured() {
@@ -15,14 +17,14 @@ function Featured() {
                 <div className="col-12 col-lg-4">
                     <div class="card rounded-0 border-0 shadow-sm mb-5 mb-lg-0 featured-item">
                         <div class="card-img-container position-relative">
-                            <img class="card-img-top rounded-0" src="http://www.fillmurray.com/460/300" alt="" />
+                            <img class="card-img-top rounded-0" src={calculator} alt="" />
                             <div class="card-img-overlay">
-                                <div class="overlay-text">Hello world <button class="btn btn-primary">Go to</button> </div>
+                                <div class="overlay-text">View code <button class="btn btn-primary">Github</button> </div>
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title">iOS Calculator</h5>
+                            <p class="card-text">An iOS styled calculator built with React.</p>
                             <p class="card-text"><small class="text-muted">#Javascript #React</small></p>
                         </div>
                     </div>

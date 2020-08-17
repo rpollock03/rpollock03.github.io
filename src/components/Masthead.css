@@ -9,7 +9,11 @@
 }
 
 span {
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: 	#39ff14 !important;
+}
+
+span > i {
+  color:#DD4B3E;
 }
 
 #location {

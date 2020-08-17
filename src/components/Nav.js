@@ -9,7 +9,7 @@ function Nav() {
 
     return (<nav id="navbar-main" class="navbar navbar-expand-lg  fixed-top">
         <div className="container">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">Robert James Pollock</a>
             <button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <Hamburger />
             </button>
