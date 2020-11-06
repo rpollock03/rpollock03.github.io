@@ -1,6 +1,8 @@
 import React from "react"
 
 import calculator from "./projects/calculator.gif"
+import weather from "./projects/weather.gif"
+import forex from "./projects/forex.gif"
 
 import "./Featured.css"
 
@@ -10,7 +12,7 @@ function Featured() {
         <div className="container">
             <h3 className="pt-4 section-title font-weight-bold text-center mb-3">Featured Projects</h3>
             <div className="section-intro mx-auto text-center mb-5 text-secondary">
-                Here's some cool things I've made recently:
+                I built this website from scratch using Bootstrap and React! Here's some other cool projects I've done recently:
             </div>
             <div className="project-cards row mb-2 mb-lg-5">
                 {/* PROJECT 1 */}
@@ -24,8 +26,8 @@ function Featured() {
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">iOS Calculator</h5>
-                            <p class="card-text">An iOS styled calculator built with React.</p>
-                            <p class="card-text"><small class="text-muted">#Javascript #React</small></p>
+                            <p class="card-text">Built with React, the styling on this fully functional calculator is  iOS inspired</p>
+                            <p class="card-text"><small class="text-muted">#Javascript #React #Frontend</small></p>
                         </div>
                     </div>
                 </div>
@@ -33,15 +35,15 @@ function Featured() {
                 <div className="col-12 col-lg-4">
                     <div class="card rounded-0 border-0 shadow-sm mb-5 mb-lg-0 featured-item">
                         <div class="card-img-container position-relative">
-                            <img class="card-img-top rounded-0" src="http://www.fillmurray.com/460/300" alt="" />
+                            <img class="card-img-top rounded-0" src={weather} alt="" />
                             <div class="card-img-overlay">
-                                <div class="overlay-text">Hello world <button class="btn btn-primary">Go to</button> </div>
+                                <div class="overlay-text">View code <button class="btn btn-primary">Github</button> </div>
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">#Javascript #React</small></p>
+                            <h5 class="card-title">Weather App</h5>
+                            <p class="card-text">Search for forecasts and weather map by auto GPS or manual search </p>
+                            <p class="card-text"><small class="text-muted">#Javascript #React #Leaflet #Frontend</small></p>
                         </div>
                     </div>
                 </div>
@@ -49,15 +51,15 @@ function Featured() {
                 <div className="col-12 col-lg-4">
                     <div class="card rounded-0 border-0 shadow-sm mb-5 mb-lg-0 featured-item">
                         <div class="card-img-container position-relative">
-                            <img class="card-img-top rounded-0" src="http://www.fillmurray.com/460/300" alt="" />
+                            <img class="card-img-top rounded-0" src={forex} alt="" />
                             <div class="card-img-overlay">
-                                <div class="overlay-text">Hello world <button class="btn btn-primary">Go to</button> </div>
+                                <div class="overlay-text">View code<button class="btn btn-primary">Github</button> </div>
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">#Javascript #React</small></p>
+                            <h5 class="card-title">Forex trading bot</h5>
+                            <p class="card-text">Looks for trends in currency markets, executing and managing trades.</p>
+                            <p class="card-text"><small class="text-muted">#C++ #MQL4 #Backend</small></p>
                         </div>
                     </div>
                 </div>
