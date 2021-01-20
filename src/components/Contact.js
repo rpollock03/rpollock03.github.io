@@ -25,7 +25,7 @@ function Contact() {
 
             <nav id="navbar-footer" class="navbar navbar-expand-lg sticky-bottom">
                 <div className="container justify-content-center">
-                    <span class="navbar-brand">Made with Bootstrap, React and ❤️ - © Robert Pollock 2021 </span>
+                    <span class="navbar-brand">Made with Bootstrap, React and ❤️ <span className="d-none d-md-inline">- © Robert Pollock 2021</span> </span>
                 </div>
 
             </nav>
