@@ -6,7 +6,7 @@ import Skills from "./components/Skills"
 import Featured from "./components/Featured"
 import Carousel from "./components/Carousel"
 import Contact from "./components/Contact"
-import Footer from "./components/Footer"
+
 
 function App() {
   return (
@@ -17,8 +17,8 @@ function App() {
       <Featured />
       <Carousel />
       <Contact />
-      <Footer />
-      <a href="#"><button id="back-to-top" className="btn btn-secondary"><i class="fas fa-arrow-circle-up"></i></button></a>
+
+      <a href="#"><button id="back-to-top" className="btn btn-secondary fixed-bottom"><i class="fas fa-arrow-circle-up"></i></button></a>
     </div>
   )
 

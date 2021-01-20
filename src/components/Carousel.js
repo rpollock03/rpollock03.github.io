@@ -2,6 +2,9 @@ import React from "react"
 
 import "./Carousel.css"
 
+import Facebook from "./projects/facebook.jpg"
+import Auth from "./projects/blog_auth.png"
+import Mql from "./projects/mql.png"
 
 function Carousel() {
 
@@ -24,24 +27,24 @@ function Carousel() {
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="http://www.fillmurray.com/460/300" alt="First slide" />
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>This is a title</h5>
-                                <p>Lorem ipsom caption here about what this is</p>
+                            <img class="d-block w-100" src={Facebook} alt="First slide" />
+                            <div class="carousel-caption d-block">
+                                <h5><span>Travel: Silicon Valley</span></h5>
+                                <p><span>A guide to the tech sites of silicon valley!</span></p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="http://www.fillmurray.com/460/300" alt="Second slide" />
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>This is a title</h5>
-                                <p>Lorem ipsom caption here about what this is</p>
+                            <img class="d-block w-100" src={Auth} alt="Second slide" />
+                            <div class="carousel-caption d-block">
+                                <h5><span>Tutorial: User Auth</span></h5>
+                                <p><span>A guide to user authentication/authorisation</span></p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="http://www.fillmurray.com/460/300" alt="Third slide" />
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>This is a title</h5>
-                                <p>Lorem ipsom caption here about what this is</p>
+                            <img class="d-block w-100" src={Mql} alt="Third slide" />
+                            <div class="carousel-caption d-block">
+                                <h5><span>My Coding Journey</span></h5>
+                                <p><span>How I got into coding what I learnt first!</span></p>
                             </div>
                         </div>
                     </div>
@@ -56,7 +59,9 @@ function Carousel() {
                 </div>
 
             </div>
-
+            <div className="text-center pt-5">
+                <a className="btn btn-primary btn-lg" href="#">Older Posts</a>
+            </div>
         </div>
     </section>
 

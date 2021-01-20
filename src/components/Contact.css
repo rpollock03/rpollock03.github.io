@@ -4,13 +4,48 @@
     background-color: #6f6db2;
 }
 
+.social-icon{
+    border-radius:50%;
+    height:50px;
+    width:50px;
+    justify-content: center;
+    align-items: center;
+    
+}
 
-
-.social-icon>i{
+.social-icon>a{
     font-size:2rem;
-    padding:20px;
+   
+    color:#424079;
+  
 }
 
 .social-icon:hover{
     background-color:white;
+}
+
+.social-icon:hover .fa-twitter{
+    color: #00acee;
+}
+
+.social-icon:hover .fa-facebook-f{
+    color: #1877f2;
+}
+
+.social-icon:hover .fa-github{
+    color: #211F1F;
+}
+
+.social-icon:hover .fa-instagram{
+    color: #d6249f;
+}
+
+.social-icon:hover .fa-envelope{
+    color: #BB001B;
+}
+
+
+
+#navbar-footer{
+    background-color: #424079 !important;
 }

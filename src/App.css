@@ -11,17 +11,21 @@ html {
 }
 
 body{
-    min-height:300vh;
+    min-height:100vh;
     background-color:#F7F8FA;
 
+}
+
+#container{
+  height:100vh;
 }
 /*# sourceMappingURL=App.css.map */
 
 
 #back-to-top{
-    position:fixed;
-    right:5px;
-    bottom:5px;
+  left: auto;
+    right:10px;
+    bottom:10px;
     font-size:1.2rem;
     cursor:pointer;
     outline:none;

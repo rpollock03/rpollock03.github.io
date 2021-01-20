@@ -3,6 +3,7 @@ import React from "react"
 import calculator from "./projects/calculator.gif"
 import weather from "./projects/weather.gif"
 import forex from "./projects/forex.gif"
+import reactNative from "./projects/react native.png"
 
 import "./Featured.css"
 
@@ -12,7 +13,7 @@ function Featured() {
         <div className="container">
             <h3 className="pt-4 section-title font-weight-bold text-center mb-3">Featured Projects</h3>
             <div className="section-intro mx-auto text-center mb-5 text-secondary">
-                I built this website from scratch using Bootstrap and React! Here's some other cool projects I've done recently:
+                This site was designed and developed by yours truly to help me learn React. It's also super responsive (try resizing the page!) thanks to the awesome Bootstrap framework. Here's some other cool things I've made recently:
             </div>
             <div className="project-cards row mb-2 mb-lg-5">
                 {/* PROJECT 1 */}
@@ -51,15 +52,15 @@ function Featured() {
                 <div className="col-12 col-lg-4">
                     <div class="card rounded-0 border-0 shadow-sm mb-5 mb-lg-0 featured-item">
                         <div class="card-img-container position-relative">
-                            <img class="card-img-top rounded-0" src={forex} alt="" />
+                            <img class="card-img-top rounded-0" src={reactNative} alt="" />
                             <div class="card-img-overlay">
-                                <div class="overlay-text">View code<button class="btn btn-primary">Github</button> </div>
+                                <div class="overlay-text">View code <button class="btn btn-primary">Github</button> </div>
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Forex trading bot</h5>
-                            <p class="card-text">Looks for trends in currency markets, executing and managing trades.</p>
-                            <p class="card-text"><small class="text-muted">#C++ #MQL4 #Backend</small></p>
+                            <h5 class="card-title">Location Tracker</h5>
+                            <p class="card-text">Location tracking app built with React Native.</p>
+                            <p class="card-text"><small class="text-muted">#ReactNative</small></p>
                         </div>
                     </div>
                 </div>
