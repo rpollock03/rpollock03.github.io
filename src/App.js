@@ -9,10 +9,10 @@ import Contact from "./components/Contact"
 import About from "./components/About"
 import Blog from "./components/Blog"
 
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 
-const Home = ()=> {
+const Home = () => {
 
   return (
     <div id="container" >
@@ -22,7 +22,7 @@ const Home = ()=> {
       <Featured />
       <Carousel />
       <Contact />
- <a href="#"><button id="back-to-top" className="btn btn-secondary fixed-bottom"><i class="fas fa-arrow-circle-up"></i></button></a>
+      <a href="#"><button id="back-to-top" className="btn btn-secondary fixed-bottom"><i class="fas fa-arrow-circle-up"></i></button></a>
     </div>
   )
 }
@@ -30,11 +30,11 @@ const Home = ()=> {
 
 function App() {
   return (
-    <Router>
-      <Route path ="/" exact component={Home} />
-      <Route path="/about" component={About}/>
-      <Route path ="/blog" component={Blog}/>
-  </Router>
+    <Router basename={process.env.PUBLIC_URL}>
+      <Route path="/" exact component={Home} />
+      <Route path="/about" component={About} />
+      <Route path="/blog" component={Blog} />
+    </Router>
   )
 
 }
