@@ -6,9 +6,14 @@ import Skills from "./components/Skills"
 import Featured from "./components/Featured"
 import Carousel from "./components/Carousel"
 import Contact from "./components/Contact"
+import About from "./components/About"
+import Blog from "./components/Blog"
+
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 
 
-function App() {
+const Home = ()=> {
+
   return (
     <div id="container" >
       <Nav />
@@ -17,9 +22,19 @@ function App() {
       <Featured />
       <Carousel />
       <Contact />
-
-      <a href="#"><button id="back-to-top" className="btn btn-secondary fixed-bottom"><i class="fas fa-arrow-circle-up"></i></button></a>
+ <a href="#"><button id="back-to-top" className="btn btn-secondary fixed-bottom"><i class="fas fa-arrow-circle-up"></i></button></a>
     </div>
+  )
+}
+
+
+function App() {
+  return (
+    <Router>
+      <Route path ="/" exact component={Home} />
+      <Route path="/about" component={About}/>
+      <Route path ="/blog" component={Blog}/>
+  </Router>
   )
 
 }

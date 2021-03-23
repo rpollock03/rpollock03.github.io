@@ -13,7 +13,7 @@ function Masthead() {
                 <h2 className="mt-0 display-4 font-weight-bold">Rob</h2>
                 <div className="bio mb-3 lead">I'm a <span className="full-stack">{"{full-stack}"}</span> web developer from <span id="location"><i class="fas fa-map-marker-alt"></i> Belfast, Northern Ireland</span></div>
                 <hr />
-                <a className="btn btn-primary font-weight-bold" href="#featured">Check me out</a>
+                <a className="btn btn-primary font-weight-bold" href="#featured">Check out my work</a>
             </div>
         </div>
 

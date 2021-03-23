@@ -4,7 +4,9 @@ import calculator from "./projects/calculator.gif"
 import weather from "./projects/weather.gif"
 import forex from "./projects/forex.gif"
 import reactNative from "./projects/react native.png"
-
+import instaClone from "./projects/instaclone/rn-instaclone.gif"
+import portfolio from "./projects/portfolio-final.gif"
+import gpni from "./projects/gpni.jpg"
 import "./Featured.css"
 
 function Featured() {
@@ -13,10 +15,25 @@ function Featured() {
         <div className="container">
             <h3 className="pt-4 section-title font-weight-bold text-center mb-3">Featured Projects</h3>
             <div className="section-intro mx-auto text-center mb-5 text-secondary">
-                This site was designed and developed by yours truly to help me learn React. It's also super responsive (try resizing the page!) thanks to the awesome Bootstrap framework. Here's some other cool things I've made recently:
+                Here's a few things I've built recently. Hover over any to read more and to see my code! 
             </div>
             <div className="project-cards row mb-2 mb-lg-5">
                 {/* PROJECT 1 */}
+                <div className="col-12 col-lg-4">
+                    <div class="card rounded-0 border-0 shadow-sm mb-5 mb-lg-0 featured-item">
+                        <div class="card-img-container position-relative">
+                            <img class="card-img-top rounded-0" src={instaClone} alt="" />
+                            <div class="card-img-overlay">
+                                <div class="overlay-text">View code <button class="btn btn-primary">Github</button> </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Instagram clone</h5>
+                            <p class="card-text">Post, comment, follow...a fully functional instagram clone!</p>
+                            <p class="card-text"><small class="text-muted">#ReactNative</small></p>
+                        </div>
+                    </div>
+                </div>
                 <div className="col-12 col-lg-4">
                     <div class="card rounded-0 border-0 shadow-sm mb-5 mb-lg-0 featured-item">
                         <div class="card-img-container position-relative">
@@ -49,7 +66,7 @@ function Featured() {
                     </div>
                 </div>
                 {/* PROJECT 3 */}
-                <div className="col-12 col-lg-4">
+                <div className="col-12 col-lg-4 mt-3">
                     <div class="card rounded-0 border-0 shadow-sm mb-5 mb-lg-0 featured-item">
                         <div class="card-img-container position-relative">
                             <img class="card-img-top rounded-0" src={reactNative} alt="" />
@@ -64,7 +81,39 @@ function Featured() {
                         </div>
                     </div>
                 </div>
+                <div className="col-12 col-lg-4 mt-3">
+                    <div class="card rounded-0 border-0 shadow-sm mb-5 mb-lg-0 featured-item">
+                        <div class="card-img-container position-relative">
+                            <img class="card-img-top rounded-0" src={portfolio} alt="" />
+                            <div class="card-img-overlay">
+                                <div class="overlay-text">View code <button class="btn btn-primary">Github</button> </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">This site!</h5>
+                            <p class="card-text">Wouldn't be much of a developer if I didn't make my own portfolio!</p>
+                            <p class="card-text"><small class="text-muted">#Javascript #React #Frontend</small></p>
+                        </div>
+                    </div>
+                </div>
+<div className="col-12 col-lg-4 mt-3">
+                    <div class="card rounded-0 border-0 shadow-sm mb-5 mb-lg-0 featured-item">
+                        <div class="card-img-container position-relative">
+                            <img class="card-img-top rounded-0" src={gpni} alt="" />
+                            <div class="card-img-overlay">
+                                <div class="overlay-text">View code <button class="btn btn-primary">Github</button> </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Landing Page</h5>
+                            <p class="card-text">A bootstrap landing page for a political party</p>
+                            <p class="card-text"><small class="text-muted">#Javascript #React #Frontend</small></p>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
+
             <div className="text-center">
                 <a className="btn btn-primary btn-lg" href="#">View all</a>
             </div>

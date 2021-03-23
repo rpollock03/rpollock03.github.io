@@ -4,15 +4,17 @@ import "./Skills.css"
 import flaskLogo from "./icons/flask.png"
 
 
+
+import { Link} from "react-router-dom"
+
 function Skills() {
 
     return (<section className="skills-section pt-5">
         <div className="container">
             <h3 className="section-title font-weight-bold text-center mb-3">Skills Overview</h3>
             <div className="section-intro mx-auto text-center mb-5 text-secondary">
-                I'm a 100% self-taught developer (<a href="www.freecodecamp.com" target="_blank">#Freecodecamp</a> alumni!) who loves to code and has a thirst for self improvement and learning new tech. My specialties include building clean and responsive web apps using the MERN stack, and powerful mobile apps using React Native. <br /><br />
+                Turning coffee into code since 2019! I'm a highly driven, 100% self-taught freelance web and app developer with a thirst for self improvement and learning new tech. Here's some of what I can do:
 
-                I'd love to chat more about my work or opportunities to collaborate. <a href="#contact"> Please get in touch.</a>
             </div>
             <div className="skills-block mx-auto pt-5">
                 <div className="row">
@@ -58,15 +60,15 @@ function Skills() {
                             <ul className="skills-list list-unstyled text-secondary ml-5 pr-4">
                                 <li className="mb-2 ">
                                     <i class="fas fa-check mr-3"></i>
-                                    Fully responsive websites that look good on any device - whether monitor or mobile.
+                                    Fully responsive websites and apps that look good on any device or screen.
                                 </li>
                                 <li className="mb-2 pr-4">
                                     <i class="fas fa-check mr-3"></i>
-                                    Hand-coded, Front-end design using the latest HTML5 & CSS3 standards.
+                                    Intuitive UX/UI design using a variety of libraries and the latest HTML5 & CSS3 standards.
                                 </li>
                                 <li className="mb-2 pr-4">
                                     <i class="fas fa-check mr-3"></i>
-                                    Highly intuitive and interactive content built with the powerful React framework.
+                                    Advanced and scalable state-centric applications powered by React and Redux.
                                 </li>
                             </ul>
                         </div>
@@ -104,21 +106,22 @@ function Skills() {
                                     <svg xmlns="http://www.w3.org/2000/svg" width="50px" viewBox="0 0 128 128"><path fill="#00618A" d="M116.948 97.807c-6.863-.187-12.104.452-16.585 2.341-1.273.537-3.305.552-3.513 2.147.7.733.809 1.829 1.365 2.731 1.07 1.73 2.876 4.052 4.488 5.268 1.762 1.33 3.577 2.751 5.465 3.902 3.358 2.047 7.107 3.217 10.34 5.268 1.906 1.21 3.799 2.733 5.658 4.097.92.675 1.537 1.724 2.732 2.147v-.194c-.628-.8-.79-1.898-1.366-2.733l-2.537-2.537c-2.48-3.292-5.629-6.184-8.976-8.585-2.669-1.916-8.642-4.504-9.755-7.609l-.195-.195c1.892-.214 4.107-.898 5.854-1.367 2.934-.786 5.556-.583 8.585-1.365l4.097-1.171v-.78c-1.531-1.571-2.623-3.651-4.292-5.073-4.37-3.72-9.138-7.437-14.048-10.537-2.724-1.718-6.089-2.835-8.976-4.292-.971-.491-2.677-.746-3.318-1.562-1.517-1.932-2.342-4.382-3.511-6.633-2.449-4.717-4.854-9.868-7.024-14.831-1.48-3.384-2.447-6.72-4.293-9.756-8.86-14.567-18.396-23.358-33.169-32-3.144-1.838-6.929-2.563-10.929-3.513-2.145-.129-4.292-.26-6.438-.391-1.311-.546-2.673-2.149-3.902-2.927-4.894-3.092-17.448-9.817-21.072-.975-2.289 5.581 3.421 11.025 5.462 13.854 1.434 1.982 3.269 4.207 4.293 6.438.674 1.467.79 2.938 1.367 4.489 1.417 3.822 2.652 7.98 4.487 11.511.927 1.788 1.949 3.67 3.122 5.268.718.981 1.951 1.413 2.145 2.927-1.204 1.686-1.273 4.304-1.95 6.44-3.05 9.615-1.899 21.567 2.537 28.683 1.36 2.186 4.567 6.871 8.975 5.073 3.856-1.57 2.995-6.438 4.098-10.732.249-.973.096-1.689.585-2.341v.195l3.513 7.024c2.6 4.187 7.212 8.562 11.122 11.514 2.027 1.531 3.623 4.177 6.244 5.073v-.196h-.195c-.508-.791-1.303-1.119-1.951-1.755-1.527-1.497-3.225-3.358-4.487-5.073-3.556-4.827-6.698-10.11-9.561-15.609-1.368-2.627-2.557-5.523-3.709-8.196-.444-1.03-.438-2.589-1.364-3.122-1.263 1.958-3.122 3.542-4.098 5.854-1.561 3.696-1.762 8.204-2.341 12.878-.342.122-.19.038-.391.194-2.718-.655-3.672-3.452-4.683-5.853-2.554-6.07-3.029-15.842-.781-22.829.582-1.809 3.21-7.501 2.146-9.172-.508-1.666-2.184-2.63-3.121-3.903-1.161-1.574-2.319-3.646-3.124-5.464-2.09-4.731-3.066-10.044-5.267-14.828-1.053-2.287-2.832-4.602-4.293-6.634-1.617-2.253-3.429-3.912-4.683-6.635-.446-.968-1.051-2.518-.391-3.513.21-.671.508-.951 1.171-1.17 1.132-.873 4.284.29 5.462.779 3.129 1.3 5.741 2.538 8.392 4.294 1.271.844 2.559 2.475 4.097 2.927h1.756c2.747.631 5.824.195 8.391.975 4.536 1.378 8.601 3.523 12.292 5.854 11.246 7.102 20.442 17.21 26.732 29.269 1.012 1.942 1.45 3.794 2.341 5.854 1.798 4.153 4.063 8.426 5.852 12.488 1.786 4.052 3.526 8.141 6.05 11.513 1.327 1.772 6.451 2.723 8.781 3.708 1.632.689 4.307 1.409 5.854 2.34 2.953 1.782 5.815 3.903 8.586 5.855 1.383.975 5.64 3.116 5.852 4.879zM29.729 23.466c-1.431-.027-2.443.156-3.513.389v.195h.195c.683 1.402 1.888 2.306 2.731 3.513.65 1.367 1.301 2.732 1.952 4.097l.194-.193c1.209-.853 1.762-2.214 1.755-4.294-.484-.509-.555-1.147-.975-1.755-.556-.811-1.635-1.272-2.339-1.952z" /></svg>
                                 </li>
                                 <li className="list-inline-itemd-sm-inline">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="50px"><g fill="#9C033A" ><path d="M87 70v-5h5v-4h-5v-5h-5v5h-5v4h5v5zM105 56h-4v5h-6v4h6v5h4v-5h5v-4h-5zM116.5 32.3c-.6-1.1-1.4-2.1-2.3-2.6l-48.1-27.8c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48.5 27.8c-1.7 1-3.4 3.5-3.4 5.4v55.7c0 1.1.7 2.3 1.4 3.4l.1.1c.5.8 1.3 1.5 2 1.9l48.3 27.9c.8.5 2 .7 3.2.7 1.2 0 2.3-.3 3.1-.7l47.5-27.9c1.7-1 2.4-3.5 2.4-5.4v-55.7c0-.8.4-1.8 0-2.6l.5-.2zm-4.2 2.1c0 .3-.3.5-.3.7v55.7c0 .8-.2 1.7-.4 2l-47.6 27.8c-.1.1-.5.2-1.1.2-.6 0-1-.1-1.1-.2l-48.2-27.8s-.1-.1-.2-.1l-.6-.6c-.4-.7.2-1.1-.8-1.2v-55.7c1-.5.9-1.7 1.4-1.9l48.3-27.9c.1 0 .6-.2 1.2-.2s1 .1 1.1.2l48 27.7.4.9c.1.1-.1.3-.1.4zM63 87.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6c-4.2 7.4-12.2 12.4-21.3 12.4z" /></g></svg>
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 0 32 32" width="50px"><path d="M19.62 11.558l-3.203 2.98-2.972-5.995 1.538-3.448c.4-.7 1.024-.692 1.414 0z" fill="#ffa000"/><path d="M13.445 8.543l2.972 5.995-11.97 11.135z" fill="#f57f17"/><path d="M23.123 7.003c.572-.55 1.164-.362 1.315.417l3.116 18.105-10.328 6.2c-.36.2-1.32.286-1.32.286s-.874-.104-1.207-.3L4.447 25.673z" fill="#ffca28"/><path d="M13.445 8.543l-8.997 17.13L8.455.638c.148-.78.592-.855.988-.167z" fill="#ffa000"/></svg>
                                 </li>
                             </ul>
                             <ul className="skills-list list-unstyled text-secondary ml-5 pr-3">
                                 <li className="mb-2 pr-3" >
                                     <i class="fas fa-check mr-3"></i>
-                                    Custom code connecting databases and providing the logic and functionality powering apps.
+                                    Custom-built RESTful APIs and servers powered by Javascript or Python.
                                 </li>
                                 <li className="mb-2 pr-3">
                                     <i class="fas fa-check mr-3"></i>
-                                    Javascript(Node) and Python(Flask) based servers, accessed by RESTful APIs.
+                                    Persistant and secure data storage solutions using SQL, MongoDB or Firebase.
                                 </li>
                                 <li className="mb-2 pr-3">
                                     <i class="fas fa-check mr-3"></i>
-                                    Secure user auth and persistant data storage solutions using both SQL and noSQL databases.
+                                    User authentication; multi-layered middleware; complex route-handling and more.
                                 </li>
                             </ul>
                         </div>
@@ -167,15 +170,15 @@ function Skills() {
                             <ul className="skills-list list-unstyled text-secondary ml-5 pr-3">
                                 <li className="mb-2 pr-3">
                                     <i class="fas fa-check mr-3"></i>
-                                    Git and Github for version control, rolling back changes and contributing to open source.
+                                    Git / Github for version control, collaborative working and ensuring updates are smooth.
                                 </li>
                                 <li className="mb-2 pr-3">
                                     <i class="fas fa-check mr-3"></i>
-                                    Collaboration and teamwork to deliver advanced applications using Git, Slack and other channels.
+                                    Integrating reusable code for speed and efficiency using libraries and other published packages.
                                 </li>
                                 <li className="mb-2 pr-3">
                                     <i class="fas fa-check mr-3"></i>
-                                    Simple app deployment using Heroku or Firebase platforms, or AWS for more complex projects.
+                                    Web-app deployment including testing, hosting, DNS configuration and more.
                                 </li>
                             </ul>
                         </div>
@@ -184,7 +187,9 @@ function Skills() {
                 </div>
             </div>
             <div className="text-center pt-lg-5">
-                <a className="btn btn-primary btn-lg" href="#">More about me</a>
+                <Link to = "/about">
+                    <a className="btn btn-primary btn-lg" href="#">More about me</a>
+                </Link>
             </div>
 
         </div>
