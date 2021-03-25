@@ -6,7 +6,12 @@ import { Link } from "react-router-dom"
 import profile2 from "./profilesecond.png"
 
 
+
+
+
+
 const About = () => {
+
 
 
     return (
@@ -47,9 +52,14 @@ const About = () => {
 
             </div>
                             <div className="text-center mb-5 pb-5">
-                                <Link to="/">
-                                    <a className="btn btn-primary btn-lg" href="#">Contact me</a>
-                                </Link>
+                                <button
+                                    className="btn btn-primary btn-lg"
+
+                                >
+                                    Contact me
+                            </button>
+
+
                             </div>
 
                         </div>

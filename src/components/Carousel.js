@@ -6,6 +6,8 @@ import Facebook from "./projects/facebook.jpg"
 import Auth from "./projects/blog_auth.png"
 import Mql from "./projects/mql.png"
 
+import { Link } from "react-router-dom"
+
 function Carousel() {
 
     return (<section className="py-5">
@@ -60,7 +62,9 @@ function Carousel() {
 
             </div>
             <div className="text-center pt-5">
-                <a className="btn btn-primary btn-lg" href="#">Older Posts</a>
+                <Link to="/blog">
+                    <a className="btn btn-primary btn-lg" href="#">All Posts</a>
+                </Link>
             </div>
         </div>
     </section>

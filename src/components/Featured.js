@@ -8,6 +8,8 @@ import instaClone from "./projects/instaclone/rn-instaclone.gif"
 import portfolio from "./projects/portfolio-final.gif"
 import gpni from "./projects/gpni.jpg"
 import "./Featured.css"
+import { Link } from "react-router-dom"
+
 
 function Featured() {
 
@@ -15,7 +17,7 @@ function Featured() {
         <div className="container">
             <h3 className="pt-4 section-title font-weight-bold text-center mb-3">Featured Projects</h3>
             <div className="section-intro mx-auto text-center mb-5 text-secondary">
-                Here's a few things I've built recently. Hover over any to read more and to see my code! 
+                Here's a few things I've built recently. Hover over any to read more and to see my code!
             </div>
             <div className="project-cards row mb-2 mb-lg-5">
                 {/* PROJECT 1 */}
@@ -96,7 +98,7 @@ function Featured() {
                         </div>
                     </div>
                 </div>
-<div className="col-12 col-lg-4 mt-3">
+                <div className="col-12 col-lg-4 mt-3">
                     <div class="card rounded-0 border-0 shadow-sm mb-5 mb-lg-0 featured-item">
                         <div class="card-img-container position-relative">
                             <img class="card-img-top rounded-0" src={gpni} alt="" />
@@ -111,11 +113,13 @@ function Featured() {
                         </div>
                     </div>
                 </div>
-                
+
             </div>
 
             <div className="text-center">
-                <a className="btn btn-primary btn-lg" href="#">View all</a>
+                <Link to="/projects">
+                    <a className="btn btn-primary btn-lg" href="#">View all</a>
+                </Link>
             </div>
 
 

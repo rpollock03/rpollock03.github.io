@@ -2,7 +2,7 @@ import React from "react"
 import Hamburger from "./Hamburger"
 
 import "./Nav.css"
-import { Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 
 function Nav() {
@@ -18,21 +18,24 @@ function Nav() {
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                    <Link to = "/" style={{textDecoration: 'none'}}>
-                        <a class="nav-link" href="#"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+                        <Link to="/" style={{ textDecoration: 'none' }}>
+                            <a class="nav-link" href="#"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+                        </Link>
+                    </li>
+
+                    <li class="nav-item">
+                        <Link to="/projects">
+                            <a class="nav-link" href="#"><i class="fas fa-briefcase"></i> Projects</a>
                         </Link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-briefcase"></i> Projects</a>
-                    </li>
-                    <li class="nav-item">
-                    <Link to = "/blog" style={{textDecoration: 'none'}}>
-                        <a class="nav-link" href="#"><i class="fas fa-newspaper"></i> Blog</a>
+                        <Link to="/blog" style={{ textDecoration: 'none' }}>
+                            <a class="nav-link" href="#"><i class="fas fa-newspaper"></i> Blog</a>
                         </Link>
                     </li>
                     <li class="nav-item">
-                    <Link to= "/about" style={{textDecoration: 'none'}}>
-                        <a href="#" class="nav-link"><i class="fas fa-user"></i> About</a>
+                        <Link to="/about" style={{ textDecoration: 'none' }}>
+                            <a href="#" class="nav-link"><i class="fas fa-user"></i> About</a>
                         </Link>
                     </li>
                 </ul>

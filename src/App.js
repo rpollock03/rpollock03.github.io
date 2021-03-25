@@ -8,9 +8,10 @@ import Carousel from "./components/Carousel"
 import Contact from "./components/Contact"
 import About from "./components/About"
 import Blog from "./components/Blog"
+import ProjectsPage from "./components/ProjectsPage"
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-
+import { HashRouter as Router, Switch, Route } from "react-router-dom"
+//Normally BrowserRouter but this creates problems with react router.
 
 const Home = () => {
 
@@ -30,10 +31,11 @@ const Home = () => {
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router >
       <Route path="/" exact component={Home} />
       <Route path="/about" component={About} />
       <Route path="/blog" component={Blog} />
+      <Route path="/projects" component={ProjectsPage} />
     </Router>
   )
 
