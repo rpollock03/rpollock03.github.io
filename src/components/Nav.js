@@ -7,8 +7,6 @@ import { Link } from "react-router-dom"
 
 function Nav() {
 
-
-
     return (<nav id="navbar-main" class="navbar navbar-expand-lg  fixed-top">
         <div className="container">
             <a class="navbar-brand" href="#">Robert James Pollock</a>
