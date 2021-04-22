@@ -3,8 +3,9 @@ import React, { useState } from "react"
 import Nav from "../Nav"
 import FeaturedProjects from "./FeaturedProjects"
 
-import instaclone from "../Images/project_forex.gif"
+import finance from "./Projects Images/finance.gif"
 import ProjectCard from "./ProjectCard"
+import forex from "./Projects Images/forex.jpg"
 
 const ProjectsPage = () => {
 
@@ -37,12 +38,21 @@ const ProjectsPage = () => {
                 <div className="project-cards row mb-2 mb-lg-5">
                     <FeaturedProjects filter={filter} />
                     <ProjectCard
-                        image={instaclone}
+                        image={finance}
                         gitlink="https://github.com/rpollock03/rn_instagram_clone"
                         bloglink="https://github.com/rpollock03/rn_instagram_clone"
-                        title="Instagram Clone"
-                        summary="Post, comment, follow...a fully functional instagram clone! ost, comment, follow...a fully functional instagram clone!"
-                        tags={["react-native", "redux", "firebase"]}
+                        title="Stocks and Shares Demo"
+                        summary="Practice buying and selling shares using real live market data provided by API!"
+                        tags={["python", "flask", "jinja"]}
+                        filter={filter}
+                    />
+                    <ProjectCard
+                        image={forex}
+                        gitlink="https://github.com/rpollock03/rn_instagram_clone"
+                        bloglink="https://github.com/rpollock03/rn_instagram_clone"
+                        title="Currency trading bot"
+                        summary="Automatically buys and sells currency markets"
+                        tags={["c", "mql4", "other"]}
                         filter={filter}
                     />
                 </div>
