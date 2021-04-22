@@ -67,7 +67,7 @@ const BlogPost = (props) => {
                                 {post.caption3}
                             </figcaption>
                         </figure>
-                        <div className="text-center m-5 p-5">
+                        <div className="text-center m-4 p-4">
                             <button
                                 className="btn btn-primary btn-lg"
 

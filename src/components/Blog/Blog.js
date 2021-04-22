@@ -23,7 +23,7 @@ const Blog = () => {
 
             if (selectedFilter === "all" || post.categories.includes(selectedFilter)) {
                 return (
-                    <div class="card ">
+                    <div class="card mb-4 ">
                         <div class="card-body d-flex flex-row">
                             <img className="mr-3 img-fluid" src={post.picture} style={{ maxWidth: 110 }} alt="Card image" />
                             <div>

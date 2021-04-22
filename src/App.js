@@ -14,6 +14,7 @@ import ProjectsPage from "./components/Projects/ProjectsPage"
 import { HashRouter as Router, Switch, Route } from "react-router-dom"
 //Normally BrowserRouter but this creates problems with react router.
 
+
 const Home = () => {
 
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <Masthead />
       <Skills />
       <Featured />
+     
       <Carousel />
       <Contact />
       <a href="#"><button id="back-to-top" className="btn btn-secondary fixed-bottom"><i class="fas fa-arrow-circle-up"></i></button></a>
