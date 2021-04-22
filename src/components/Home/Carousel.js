@@ -45,8 +45,14 @@ function Carousel() {
                         <div class="carousel-item">
                             <img class="d-block w-100" src={Mql} alt="Third slide" />
                             <div class="carousel-caption d-block">
-                                <h5><span>My Coding Journey</span></h5>
-                                <p><span>How I got into coding what I learnt first!</span></p>
+
+
+                                <Link to={"/post/my-coding-journey"} key={"/post/my-coding-journey"} style={{ textDecoration: 'none', color: "white" }}>
+                                    <h4 className="font-weight-bold"><span>My Coding Journey</span></h4>
+                                    <p><span>How I got into coding what I learnt first!</span></p>
+                                </Link>
+
+
                             </div>
                         </div>
                     </div>

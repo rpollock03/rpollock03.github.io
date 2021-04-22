@@ -6,6 +6,9 @@ import FeaturedProjects from "./FeaturedProjects"
 import finance from "./Projects Images/finance.gif"
 import ProjectCard from "./ProjectCard"
 import forex from "./Projects Images/forex.jpg"
+import comingsoon from "./Projects Images/comingsoon.jpg"
+
+
 
 const ProjectsPage = () => {
 
@@ -35,12 +38,11 @@ const ProjectsPage = () => {
                 <button type="button" class="btn btn-outline-dark mx-2" onClick={() => handleFilterChange("all")}>All</button>
             </div>
             <div className="container">
-                <div className="project-cards row mb-2 mb-lg-5">
+                <div className="project-cards row  mb-lg-5">
                     <FeaturedProjects filter={filter} />
                     <ProjectCard
                         image={finance}
-                        gitlink="https://github.com/rpollock03/rn_instagram_clone"
-                        bloglink="https://github.com/rpollock03/rn_instagram_clone"
+                        gitlink="https://github.com/rpollock03/finance"
                         title="Stocks and Shares Demo"
                         summary="Practice buying and selling shares using real live market data provided by API!"
                         tags={["python", "flask", "jinja"]}
@@ -48,11 +50,18 @@ const ProjectsPage = () => {
                     />
                     <ProjectCard
                         image={forex}
-                        gitlink="https://github.com/rpollock03/rn_instagram_clone"
-                        bloglink="https://github.com/rpollock03/rn_instagram_clone"
+                        gitlink="https://github.com/rpollock03/insidebarstrategy"
                         title="Currency trading bot"
                         summary="Automatically buys and sells currency markets"
                         tags={["c", "mql4", "other"]}
+                        filter={filter}
+                    />
+                    <ProjectCard
+                        image={comingsoon}
+                        gitlink="https://github.com/rpollock03/rn_instagram_clone"
+                        title="Business website"
+                        summary="My first paid commission!"
+                        tags={["react", "javascript", "frontend"]}
                         filter={filter}
                     />
                 </div>

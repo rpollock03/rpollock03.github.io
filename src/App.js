@@ -11,6 +11,8 @@ import Blog from "./components/Blog/Blog"
 import BlogPost from "./components/Blog/BlogPost"
 import ProjectsPage from "./components/Projects/ProjectsPage"
 
+import ScrollToTop from "./ScrollToTop"
+
 import { HashRouter as Router, Switch, Route } from "react-router-dom"
 //Normally BrowserRouter but this creates problems with react router.
 
@@ -23,7 +25,7 @@ const Home = () => {
       <Masthead />
       <Skills />
       <Featured />
-     
+
       <Carousel />
       <Contact />
       <a href="#"><button id="back-to-top" className="btn btn-secondary fixed-bottom"><i class="fas fa-arrow-circle-up"></i></button></a>
@@ -35,6 +37,7 @@ const Home = () => {
 function App() {
   return (
     <Router >
+      <ScrollToTop />
       <Route path="/" exact component={Home} />
       <Route path="/about" component={About} />
       <Route path="/blog" component={Blog} />

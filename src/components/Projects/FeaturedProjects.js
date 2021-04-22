@@ -15,9 +15,9 @@ const FeaturedProjects = (props) => {
         <ProjectCard
             image={instaClone}
             gitlink="https://github.com/rpollock03/rn_instagram_clone"
-            bloglink="https://github.com/rpollock03/rn_instagram_clone"
+            bloglink="/post/robstagram"
             title="Instagram Clone"
-            summary="Post, comment, follow...a fully functional instagram clone! ost, comment, follow...a fully functional instagram clone!"
+            summary="Post, comment, follow, like in realtime with this fully functional, full-stack instagram clone. "
             tags={["react-native", "redux", "firebase"]}
             filter={props.filter}
         />
