@@ -28,14 +28,14 @@ const ProjectsPage = () => {
 
                 </div>
             </div>
-            <div className="container p-5 d-flex justify-content-center">
-                <button type="button" class="btn btn-outline-primary mx-2" onClick={() => handleFilterChange("react")}>React</button>
-                <button type="button" class="btn btn-outline-secondary mx-2" onClick={() => handleFilterChange("javascript")}>Javascript</button>
-                <button type="button" class="btn btn-outline-success mx-2" onClick={() => handleFilterChange("react-native")}>React Native</button>
-                <button type="button" class="btn btn-outline-danger mx-2" onClick={() => handleFilterChange("python")}>Python</button>
-                <button type="button" class="btn btn-outline-warning mx-2" onClick={() => handleFilterChange("c")}>C</button>
-                <button type="button" class="btn btn-outline-info mx-2" onClick={() => handleFilterChange("other")}>Other</button>
-                <button type="button" class="btn btn-outline-dark mx-2" onClick={() => handleFilterChange("all")}>All</button>
+            <div className="container p-5 d-flex flex-wrap justify-content-center">
+                <button type="button" class="btn btn-outline-primary m-2" onClick={() => handleFilterChange("react")}>React</button>
+                <button type="button" class="btn btn-outline-secondary m-2" onClick={() => handleFilterChange("javascript")}>Javascript</button>
+                <button type="button" class="btn btn-outline-success m-2" onClick={() => handleFilterChange("react-native")}>React Native</button>
+                <button type="button" class="btn btn-outline-danger m-2" onClick={() => handleFilterChange("python")}>Python</button>
+                <button type="button" class="btn btn-outline-warning m-2" onClick={() => handleFilterChange("c")}>C</button>
+                <button type="button" class="btn btn-outline-info m-2" onClick={() => handleFilterChange("other")}>Other</button>
+                <button type="button" class="btn btn-outline-dark m-2" onClick={() => handleFilterChange("all")}>All</button>
             </div>
             <div className="container">
                 <div className="project-cards row  mb-lg-5">
