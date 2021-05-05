@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio-site/static/css/main.99c251cb.chunk.css",
-    "main.js": "/portfolio-site/static/js/main.e9b22bfd.chunk.js",
-    "main.js.map": "/portfolio-site/static/js/main.e9b22bfd.chunk.js.map",
+    "main.css": "/portfolio-site/static/css/main.42535b54.chunk.css",
+    "main.js": "/portfolio-site/static/js/main.5a736b97.chunk.js",
+    "main.js.map": "/portfolio-site/static/js/main.5a736b97.chunk.js.map",
     "runtime-main.js": "/portfolio-site/static/js/runtime-main.09e58501.js",
     "runtime-main.js.map": "/portfolio-site/static/js/runtime-main.09e58501.js.map",
-    "static/js/2.804ecd57.chunk.js": "/portfolio-site/static/js/2.804ecd57.chunk.js",
-    "static/js/2.804ecd57.chunk.js.map": "/portfolio-site/static/js/2.804ecd57.chunk.js.map",
+    "static/js/2.af5344b9.chunk.js": "/portfolio-site/static/js/2.af5344b9.chunk.js",
+    "static/js/2.af5344b9.chunk.js.map": "/portfolio-site/static/js/2.af5344b9.chunk.js.map",
     "index.html": "/portfolio-site/index.html",
-    "precache-manifest.57daae716271b0759392b9fc4290ce19.js": "/portfolio-site/precache-manifest.57daae716271b0759392b9fc4290ce19.js",
+    "precache-manifest.e44c12afa587b5698f0d8a3380368d5a.js": "/portfolio-site/precache-manifest.e44c12afa587b5698f0d8a3380368d5a.js",
     "service-worker.js": "/portfolio-site/service-worker.js",
-    "static/css/main.99c251cb.chunk.css.map": "/portfolio-site/static/css/main.99c251cb.chunk.css.map",
-    "static/js/2.804ecd57.chunk.js.LICENSE.txt": "/portfolio-site/static/js/2.804ecd57.chunk.js.LICENSE.txt",
+    "static/css/main.42535b54.chunk.css.map": "/portfolio-site/static/css/main.42535b54.chunk.css.map",
+    "static/js/2.af5344b9.chunk.js.LICENSE.txt": "/portfolio-site/static/js/2.af5344b9.chunk.js.LICENSE.txt",
     "static/media/FacebookHQ.jpg": "/portfolio-site/static/media/FacebookHQ.e4fcc2f7.jpg",
     "static/media/MQL4.JPG": "/portfolio-site/static/media/MQL4.10514f44.JPG",
     "static/media/blog_auth.png": "/portfolio-site/static/media/blog_auth.5d8b7f99.png",
@@ -33,12 +33,13 @@
     "static/media/robstagram.gif": "/portfolio-site/static/media/robstagram.260fcb4a.gif",
     "static/media/robstagramfollow.gif": "/portfolio-site/static/media/robstagramfollow.e33287a3.gif",
     "static/media/robstagramlogin.jpg": "/portfolio-site/static/media/robstagramlogin.e080f398.jpg",
+    "static/media/siliconvalleymap.png": "/portfolio-site/static/media/siliconvalleymap.24d009d9.png",
     "static/media/wave_coffee.jpg": "/portfolio-site/static/media/wave_coffee.a7a8d066.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.09e58501.js",
-    "static/js/2.804ecd57.chunk.js",
-    "static/css/main.99c251cb.chunk.css",
-    "static/js/main.e9b22bfd.chunk.js"
+    "static/js/2.af5344b9.chunk.js",
+    "static/css/main.42535b54.chunk.css",
+    "static/js/main.5a736b97.chunk.js"
   ]
 }

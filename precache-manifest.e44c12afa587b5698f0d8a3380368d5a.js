@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "114d05eedd8c8c1dd3e326420939404b",
+    "revision": "d8bd9234f32bfc8c3f5a31f472c65beb",
     "url": "/portfolio-site/index.html"
   },
   {
-    "revision": "340b7549eabf910ce92b",
-    "url": "/portfolio-site/static/css/main.99c251cb.chunk.css"
+    "revision": "9ca1f5c03c04cd2aac1d",
+    "url": "/portfolio-site/static/css/main.42535b54.chunk.css"
   },
   {
-    "revision": "1b9d0cbaf4b6320d454f",
-    "url": "/portfolio-site/static/js/2.804ecd57.chunk.js"
+    "revision": "1160dbaee12ae0dfb8a0",
+    "url": "/portfolio-site/static/js/2.af5344b9.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/portfolio-site/static/js/2.804ecd57.chunk.js.LICENSE.txt"
+    "url": "/portfolio-site/static/js/2.af5344b9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "340b7549eabf910ce92b",
-    "url": "/portfolio-site/static/js/main.e9b22bfd.chunk.js"
+    "revision": "9ca1f5c03c04cd2aac1d",
+    "url": "/portfolio-site/static/js/main.5a736b97.chunk.js"
   },
   {
     "revision": "0f813f4ae96b8819977c",
@@ -106,6 +106,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e080f3988f24a8b89bb4c3b38b56db43",
     "url": "/portfolio-site/static/media/robstagramlogin.e080f398.jpg"
+  },
+  {
+    "revision": "24d009d9e9fead25d2640996ede10aa5",
+    "url": "/portfolio-site/static/media/siliconvalleymap.24d009d9.png"
   },
   {
     "revision": "a7a8d0660887a2d4494b59f9169fe5ae",
