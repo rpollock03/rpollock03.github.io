@@ -11,11 +11,12 @@ exports.handler = function(event, context, callback) {
         secureConnection: false,
         port: 587,
         tls: {
-       ciphers:'SSLv3'
+       ciphers:'SSLv3',
+       rejectUnauthorized: false
     },
         auth:{
          user: "robertportfoliosite@outlook.com",
-         pass: "skyshark87"
+         pass: "Skyshark87"
     }
     });
 
@@ -29,7 +30,7 @@ exports.handler = function(event, context, callback) {
             `
     }, function(error, info) {
         if (error) {
-            callback(error);
+            callback(error, info);
         } else {
             callback(null, {
             statusCode: 200,
