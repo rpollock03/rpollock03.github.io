@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import "./App.css"
 import Nav from "./components/Nav"
 import Masthead from "./components/Home/Masthead"
@@ -15,12 +15,40 @@ import ScrollToTop from "./ScrollToTop"
 
 import { HashRouter as Router, Switch, Route } from "react-router-dom"
 //Normally BrowserRouter but this creates problems with react router.
-
+import { HashLink } from "react-router-hash-link"
 
 const Home = () => {
 
+  const [isAtBottom, setIsAtBottom] = useState(false)
+
+  const handleScroll = () => {
+    const bottom = Math.ceil(window.innerHeight + window.scrollY + 500) >= document.documentElement.scrollHeight
+
+    if (bottom) {
+      setIsAtBottom(true)
+    }
+
+    if (window.pageYOffset === 0) {
+      setIsAtBottom(false)
+    }
+
+  }
+
+
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, {
+      passive: true
+    });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
   return (
-    <div id="container" >
+    <div id="container" onScroll={handleScroll}>
       <Nav />
       <Masthead />
       <Skills />
@@ -28,10 +56,16 @@ const Home = () => {
 
       <Carousel />
       <Contact />
-      <a href="#"><button id="back-to-top" className="btn btn-secondary fixed-bottom"><i class="fas fa-arrow-circle-up"></i></button></a>
+      <HashLink to={isAtBottom ? "/#" : "/#contact"} style={{ textDecoration: 'none' }}>
+        <button id="back-to-top" className="btn  btn-secondary fixed-bottom mb-5"><i class={isAtBottom ? "fas fa-arrow-circle-up" : "fas fa-address-card"}></i> {isAtBottom ? "Back to top" : "Get in touch"}</button>
+      </HashLink>
     </div>
   )
 }
+
+
+
+
 
 
 function App() {

@@ -4,7 +4,7 @@ import Nav from "../Nav.js"
 
 import { Link } from "react-router-dom"
 import profile2 from "./profilesecond.png"
-
+import { HashLink } from "react-router-hash-link"
 
 
 
@@ -52,12 +52,18 @@ const About = () => {
 
             </div>
                             <div className="text-center mb-5 pb-5">
-                                <button
-                                    className="btn btn-primary btn-lg"
 
-                                >
-                                    Contact me
+
+
+                                <HashLink to="/#contact" style={{ textDecoration: 'none' }}>
+                                    <button
+                                        className="btn btn-primary btn-lg"
+
+                                    >
+                                        Contact me
                             </button>
+                                </HashLink>
+
 
 
                             </div>

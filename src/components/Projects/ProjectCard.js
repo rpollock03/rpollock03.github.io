@@ -7,7 +7,7 @@ const ProjectCard = (props) => {
 
     if (props.tags.includes(props.filter) || props.filter == "all" || props.filter == null) {
         return (<div className="col-12 col-lg-4">
-            <div class="card rounded-0 border-0 shadow-sm mb-5 featured-item text-secondary">
+            <div class="card rounded-0 border-0 shadow-sm mx-4 mx-md-0 mb-5 featured-item text-secondary">
                 <div class="card-img-container position-relative">
                     <img class="card-img-top rounded-0" src={props.image} alt="" />
                     <div class="card-img-overlay">

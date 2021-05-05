@@ -3,7 +3,7 @@ import Hamburger from "./Hamburger"
 
 import "./Nav.css"
 import { Link } from "react-router-dom"
-
+import { HashLink } from "react-router-hash-link"
 
 function Nav() {
 
@@ -35,6 +35,11 @@ function Nav() {
                         <Link to="/about" style={{ textDecoration: 'none' }}>
                             <a href="#" class="nav-link"><i class="fas fa-user"></i> About</a>
                         </Link>
+                    </li>
+                    <li class="nav-item">
+                        <HashLink to="/#contact" style={{ textDecoration: 'none' }}>
+                            <a href="#" class="nav-link"><i class="fas fa-address-card"></i> Contact</a>
+                        </HashLink>
                     </li>
                 </ul>
             </div>
