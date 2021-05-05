@@ -1,8 +1,74 @@
-import React from "react"
+import React, {useState} from "react"
+
+import axios from 'axios';
 
 import "./Contact.css"
 
 function Contact() {
+
+    const [data, setData] = useState({ name: '', email: '', message: '', sent: false, buttonText: 'Submit', err: '' })
+
+
+    const handleChange = (e)=>{
+        const {id, value} = e.target
+        setData({
+            ...data,
+            [id]: value
+        })
+    }
+
+    const resetForm = () => {
+        setData({
+            name: '',
+            email: '',
+            message: '',
+            sent: false,
+            buttonText: 'Submit',
+            err: ''
+        });
+    }
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        //console.log(data)
+         setData({
+            ...data,
+            buttonText: 'Sending...'
+        })
+        axios.post('/api/sendmail', data)
+        .then(res => {
+            if(res.data.result !=='success') {
+                setData({
+                    ...data,
+                    buttonText: 'Failed to send',
+                    sent: false,
+                    err: 'fail'
+                })
+                setTimeout(() => {
+                    resetForm()
+                }, 6000)
+            } else {
+                setData({
+                    ...data,
+                    sent: true,
+                    buttonText: 'Sent',
+                    err: 'success'
+                })
+                setTimeout(() => {
+                    resetForm();
+                }, 6000)
+            }
+        }).catch( (err) => {
+            //console.log(err.response.status)
+            setData({
+                ...data,
+                buttonText: 'Failed to send',
+                err: 'fail'
+            })
+        })
+
+    }
 
 
     return <section id="contact" className="pt-5">
@@ -26,17 +92,38 @@ function Contact() {
                     <h3 className="text-center py-2">Send me a message:</h3>
                     <div className="form-group">
                         <label for="name">Name:</label>
-                        <input type="text" className="form-control" id="name" placeholder="John Smith" />
+                        <input 
+                            type="text" 
+                            className="form-control" 
+                            id="name" 
+                            placeholder="John Smith" 
+                            onChange={handleChange}
+                            value={data.name}
+                        />
                     </div>
                     <div className="form-group">
                         <label for="email">Your email:</label>
-                        <input type="email" className="form-control" id="email" placeholder="john.smith@gmail.com" />
+                        <input 
+                            type="email" 
+                            className="form-control" 
+                            id="email" 
+                            placeholder="john.smith@gmail.com" 
+                            onChange={handleChange}
+                            value={data.email}
+                        />
                     </div>
                     <div className="form-group">
                         <label for="message">Message:</label>
-                        <textarea className="form-control" id="message" placeholder="Your message here" rows="6" />
+                        <textarea 
+                            className="form-control" 
+                            id="message" 
+                            placeholder="Your message here" 
+                            rows="6" 
+                            onChange={handleChange}
+                            value={data.message}
+                        />
                     </div>
-                    <button type="submit" className="btn btn-primary btn-block  ">Send</button>
+                    <button type="submit" onClick={handleSubmit} className="btn btn-primary btn-block">{data.buttonText}</button>
                 </form>
             </div>
 

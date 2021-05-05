@@ -31,8 +31,10 @@ function Carousel() {
                         <div class="carousel-item active">
                             <img class="d-block w-100" src={Facebook} alt="First slide" />
                             <div class="carousel-caption d-block">
-                                <h5><span>Travel: Silicon Valley</span></h5>
+                            <Link to={"/post/silicon-valley"} key={"/post/silicon-valley"} style={{ textDecoration: 'none', color: "white" }}>
+                                <h4 className="font-weight-bold"><span>Travel: Silicon Valley</span></h4>
                                 <p><span>A guide to the tech sites of silicon valley!</span></p>
+                            </Link>
                             </div>
                         </div>
                         <div class="carousel-item">
