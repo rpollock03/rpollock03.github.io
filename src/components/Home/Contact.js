@@ -36,14 +36,19 @@ function Contact() {
             ...data,
             buttonText: 'Sending...'
         })
-        axios.post('/api/sendmail', data)
+        axios.defaults.headers.post['Content-Type'] = 'application/json';
+        axios.post('https://formsubmit.co/ajax/3efce224ad2bdc9fc413aafb275676fa', {
+            name: data.name,
+            email: data.email,
+            message: data.message
+        })
         .then(res => {
-            if(res.data.result !=='success') {
+            if(res.data.success !=='true') {
                 setData({
                     ...data,
                     buttonText: 'Failed to send',
                     sent: false,
-                    err: 'fail'
+                    err: res.data.message
                 })
                 setTimeout(() => {
                     resetForm()
@@ -53,14 +58,13 @@ function Contact() {
                     ...data,
                     sent: true,
                     buttonText: 'Sent',
-                    err: 'success'
+                    err: res.data.message
                 })
                 setTimeout(() => {
                     resetForm();
                 }, 6000)
             }
         }).catch( (err) => {
-            //console.log(err.response.status)
             setData({
                 ...data,
                 buttonText: 'Failed to send',
@@ -88,7 +92,9 @@ function Contact() {
                         </li>
                     </ul>
                 </div>
-                <form className="mx-md-5 my-5 " style={{ padding: "40px", borderRadius: "20px", backgroundColor: "#fff", boxShadow: "0 15px 30px 0 rgb(0 0 0 / 20%)" }}>
+                <form className="mx-md-5 my-5 " style={{ padding: "40px", borderRadius: "20px", backgroundColor: "#fff", boxShadow: "0 15px 30px 0 rgb(0 0 0 / 20%)" }}
+          
+                >
                     <h3 className="text-center py-2">Send me a message:</h3>
                     <div className="form-group">
                         <label for="name">Name:</label>
