@@ -61,12 +61,19 @@ const BlogPost = (props) => {
                         <p>
                             {post.text4}
                         </p>
+                       
                         <figure  >
                             <img className="img-fluid px-5" src={post.picture3} alt="" />
                             <figcaption className="mt-2 text-center image-caption" style={{ color: "#8f8f8f" }}>
                                 {post.caption3}
                             </figcaption>
                         </figure>
+                         <p>
+                            {post.text5}
+                        </p>
+                         <p>
+                            {post.text6}
+                        </p>
                         <div className="text-center m-4 p-4">
                             <button
                                 className="btn btn-primary btn-lg"
