@@ -5,7 +5,7 @@ import reactNative from "../Images/project_track.png"
 import instaClone from "../Images/instaclone/rn-instaclone.gif"
 import portfolio from "../Images/project_portfolio-final.gif"
 import gpni from "../Images/project_GPLanding.jpg"
-
+import messenger from "../Images/project_messenger.gif.jpg"
 
 import ProjectCard from "../Projects/ProjectCard"
 
@@ -47,11 +47,11 @@ const FeaturedProjects = (props) => {
             filter={props.filter}
         />
         <ProjectCard
-            image={portfolio}
+            image={messenger}
             gitlink="https://github.com/rpollock03/portfolio-site"
             title="This site!"
-            summary="Wouldn't be much of a developer if I didn't make my own portfolio!"
-            tags={["react", "react-router", "javascript", "frontend"]}
+            summary="A lightning fast messenger service! "
+            tags={["react", "firebase", "javascript", "frontend"]}
             filter={props.filter}
         />
         <ProjectCard
